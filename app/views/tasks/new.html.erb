@@ -1,0 +1,6 @@
+<%= form_for @task, :url => { :action => "create" }  do |f|  %>
+    <%= f.text_field :taskId %>
+    <%=f.text_field :taskName %>
+    <%=f.text_field :status%>
+    <%= f.submit "Add todo" %>
+ <%end%>
